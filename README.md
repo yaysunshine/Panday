@@ -19,5 +19,5 @@ class User has_many :photos :through :likes
 
 ![schema](/schema.jpg)
 
-
+stretch goal to go through and check all seeds so no repeated pictures
 
