@@ -19,5 +19,12 @@ class User has_many :photos :through :likes
 
 ![schema](/schema.jpg)
 
-stretch goal to go through and check all seeds so no repeated pictures
+-stretch- to go through and check all seeds so no repeated pictures
+
+-stretch- user can set at what time of day receive the text
+
+seeds
+  var imgs = $('.thumbnailMedia .thumbnailImage .thumbnailLink img')
+  $.each(imgs, function(index, value) { console.log($(value).attr('src'))});
+
 
