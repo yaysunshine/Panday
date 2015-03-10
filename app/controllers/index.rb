@@ -2,6 +2,7 @@ require 'rubygems'
 require 'sinatra'
 
 get '/' do
-  "pandas!"
-  erb :signed_in
+  # "pandas!"
+  erb :log_in
 end
+
