@@ -4,17 +4,28 @@ body {
   font-family: 'Indie Flower', cursive;
 }
 
-.logo {
-
+.logo img {
+  /*background-color: black;*/
+  display: inline-block;
+  /*float: left;*/
+  height: 60px;
+  width: 60px;
+  margin-left: 27%;
+  margin-top: 5%;
+  /*border: 1px dotted black;*/
 }
 
 .panday {
-  margin-left: 15%;
-  font-size: 50px;
+  display: inline-block;
+  float: left;
+  margin-left: 10%;
+  margin-top: -5.5%;
+  font-size: 70px;
+  /*border: 2px solid red;*/
 }
 
-.signin {
-  margin-left: 15%;
+.login {
+  margin-left: 14%;
   margin-top: 10%;
   font-size: 24px;
 }
