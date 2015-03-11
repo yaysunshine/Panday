@@ -8,12 +8,17 @@ gem 'pg'
 gem 'sinatra'
 gem 'sinatra-contrib'
 
+gem 'thin'
+
 gem 'activesupport', '~>4.1'
 gem 'activerecord', '~>4.1'
 
 gem 'rake'
 
 gem 'shotgun'
+
+gem 'oauth'
+gem 'twitter'
 
 group :test do
   gem 'shoulda-matchers'
@@ -23,6 +28,7 @@ group :test do
 end
 
 group :test, :development do
+  gem 'rspec'
   gem 'factory_girl'
   gem 'faker'
 end
