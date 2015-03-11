@@ -20,6 +20,8 @@ gem 'shotgun'
 gem 'oauth'
 gem 'twitter'
 
+gem 'dotenv'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
@@ -28,7 +30,6 @@ group :test do
 end
 
 group :test, :development do
-  gem 'rspec'
   gem 'factory_girl'
   gem 'faker'
 end

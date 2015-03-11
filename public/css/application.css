@@ -1,7 +1,7 @@
 body {
   background: url("bamboo.jpg") no-repeat center center fixed;
   background-size: cover;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Indie Flower';
 }
 
 .panday {
@@ -25,9 +25,9 @@ img {
   /*border: 1px dotted black;*/
 }
 
-.login {
+.signin {
   margin-top: 20%;
-  font-size: 24px;
+  font-size: 28px;
   position: relative;
   display: block;
   float: left;
