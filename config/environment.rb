@@ -24,6 +24,10 @@ require 'oauth'
 require 'twitter'
 
 require 'dotenv'
+
+require 'better_errors'
+# require 'binding_of_caller'
+
 Dotenv.load
 
 # Some helper constants for path-centric logic
@@ -49,3 +53,9 @@ Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
 
 # Set up the database and models
 require APP_ROOT.join('config', 'database')
+
+configure :development do
+  use BetterErrors::Middleware
+  BetterErrors.application_root = __dir__
+end
+
