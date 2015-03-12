@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'omniauth-twitter'
+# require 'omniauth-twitter'
 
 
 
