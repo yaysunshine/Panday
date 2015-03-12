@@ -22,7 +22,10 @@ require 'erb'
 
 require 'oauth'
 require 'twitter'
-# require 'omniauth-twitter'
+require 'omniauth-twitter'
+use OmniAuth::Builder do
+  provider :twitter, ENV['CONSUMER_KEY'], ENV['CONSUMER_SECRET']
+end
 
 require 'dotenv'
 

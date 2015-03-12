@@ -20,6 +20,8 @@ gem 'shotgun'
 gem 'oauth'
 gem 'twitter'
 
+gem 'omniauth-twitter'
+
 gem 'dotenv'
 
 group :test do
