@@ -1,8 +1,26 @@
 body {
   background: url("bamboo.jpg") no-repeat center center fixed;
   background-size: cover;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Indie Flower';
 }
+/*
+.time {
+  margin-top: 0px;
+  background-color: #EAEAEA;
+  width: 100%;
+  height: 50px;
+  border: 2px solid green;
+}*/
+/*
+.footer{
+  bottom: 0px;
+  position: absolute;
+  background-color: #EAEAEA;
+  width: 100%;
+  height: 50px;
+  border: 2px solid green;
+  text-align: center;
+}*/
 
 .panday {
   font-size: 70px;
@@ -11,24 +29,35 @@ body {
   float: left;
   margin-top: 5%;
   margin-left: 10%;
-  /*border: 2px solid red;*/
 }
 
-img {
+img.logo {
   height: 55px;
   width: 55px;
-  /*margin-left:%;*/
   display: block;
   position: relative;
   float: right;
   margin-top: 5%;
-  /*border: 1px dotted black;*/
 }
 
-.login {
-  margin-top: 20%;
+.signin {
+  margin-top: 8%;
+  margin-right: 10%;
   font-size: 24px;
   position: relative;
   display: block;
-  float: left;
+  float: right;
+  border: 2px solid green;
+}
+
+img.pandapic {
+  width: 300px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 10px;
+  /*margin-top: 10%;*/
+  /*position: relative;*/
+  border: 2px solid black;
 }

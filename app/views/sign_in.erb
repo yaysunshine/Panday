@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <meta charset="utf-8">
+    <title>Panday</title>
+    <link rel="stylesheet" href="/css/application.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/js/application.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="time"></div>
+      <div id="header">
+        <h1 class="panday">PANDAY<img class="logo" src="../../../css/pandas.jpg"/></h1>
+
+        <div class="signin">
+          <button type="button">reveal panda of the day</button>
+        </div>
+
+        <img class="pandapic" style="display: none;" src="yaypanda"></p>
+
+        <script>
+          $("button").click(function() {
+            $.ajax({
+              url: '/reveal',
+              type: 'get'
+            }).done(function(response) {
+              if($(".pandapic").toggle().is(":visible")) {
+                $('.pandapic').attr('src',response)
+              }
+            });
+          });
+        </script>
+      </div>
+
+    </div>
+
+  <div class="footer"></div>
+  </body>
+</html>
