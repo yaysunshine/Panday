@@ -22,7 +22,7 @@ require 'erb'
 
 require 'oauth'
 require 'twitter'
-require 'omniauth-twitter'
+# require 'omniauth-twitter'
 
 require 'dotenv'
 
