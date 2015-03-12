@@ -26,7 +26,6 @@ require 'twitter'
 
 require 'dotenv'
 
-require 'better_errors'
 # require 'binding_of_caller'
 
 Dotenv.load
@@ -56,6 +55,7 @@ Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
 require APP_ROOT.join('config', 'database')
 
 configure :development do
+  require 'better_errors'
   use BetterErrors::Middleware
   BetterErrors.application_root = __dir__
 end
