@@ -12,17 +12,24 @@
 
   <body>
 
-    <div class="container">
-      <div class="time"></div>
-      <div id="header">
-        <h1 class="panday">PANDAY<img class="logo" src="../../../css/pandas.jpg"/></h1>
+    <div id="time"></div>
+    <script>
+      var months = ['January','February','March','April','May','June','July', 'August', 'September', 'October', 'November', 'December']
+      var tomorrow = new Date();
+      tomorrow.setTime(tomorrow.getTime() + (1000*3600*24));
+      document.getElementById("time").innerHTML = months[tomorrow.getMonth()] + " " + tomorrow.getDate() + " " + tomorrow.getFullYear();
+    </script>
 
-        <div class="signin">
-          <button type="button">reveal panda of the day</button>
-        </div>
+    <div class="header">
+      <h1 class="panday">PANDAY<img class="logo" src="../../../css/pandas.jpg"/></h1>
 
-        <img class="pandapic" style="display: none;" src="yaypanda"></p>
+      <div class="signin">
+        <button type="button">reveal panda of the day</button>
+      </div>
+    </div>
 
+    <div class="panda-reveal">
+      <img class="pandapic" style="display: none;" src="yaypanda">
         <script>
           $("button").click(function() {
             $.ajax({
@@ -35,9 +42,8 @@
             });
           });
         </script>
-      </div>
-
     </div>
+
 
   <div class="footer"></div>
   </body>
