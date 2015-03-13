@@ -17,12 +17,14 @@ gem 'rake'
 
 gem 'shotgun'
 
-gem 'oauth'
-gem 'twitter'
+# gem 'oauth'
+# gem 'twitter'
 
-gem 'omniauth-twitter'
+# gem 'omniauth-twitter'
 
 gem 'dotenv'
+
+gem 'twilio-ruby'
 
 group :test do
   gem 'shoulda-matchers'

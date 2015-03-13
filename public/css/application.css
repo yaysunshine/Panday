@@ -74,3 +74,25 @@ img.pandapic {
   /*position: relative;*/
   /*border: 2px solid black;*/
 }
+
+.sendpic {
+  margin-top: 20%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 30px;
+  position: relative;
+  display: block;
+  float: left;
+  border: 2px solid green;
+}
+
+.send {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 100px;
+  /*margin-top: 10%;*/
+  /*position: relative;*/
+  /*border: 2px solid black;*/
+}

@@ -1,21 +1,25 @@
 require 'sinatra'
-# require 'debugger'
+
 
 get '/' do
   erb :sign_in
 end
 
 get '/reveal' do
-  # params[:id]
   @panda = Photo.all.sample
   @panda.url
+end
 
-  # erb :sign_in
+get '/send' do
+  @client = Twilio::REST::Client.new ENV["account_sid"], ENV["auth_token"]
 
-  # debugger
-  # # redirect to("https://twitter.com/auth/twitter")
-  # redirect "https://api.twitter.com/oauth/authorize?oauth_token=#{ENV["CONSUMER_KEY"]}"
+  @client.messages.create(
+    :from => "+14159067463",
+    :to => "+14159479096",
+    :media_url => "#{params[:picUrl]}",
+    )
 end
 
 get '/sign_out' do
 end
+
