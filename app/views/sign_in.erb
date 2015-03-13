@@ -29,9 +29,10 @@
     </div>
 
     <div class="panda-reveal">
-      <img class="pandapic" style="display: none;" src="yaypanda">
+      <img class="pandapic" style="display: none;" src="#">
         <script>
-          $("button").click(function() {
+          $("button").click(function(event) {
+            event.preventDefault();
             $.ajax({
               url: '/reveal',
               type: 'get'
