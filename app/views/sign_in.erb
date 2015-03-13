@@ -13,12 +13,6 @@
   <body>
 
     <div id="time"></div>
-    <script>
-      var months = ['January','February','March','April','May','June','July', 'August', 'September', 'October', 'November', 'December']
-      var tomorrow = new Date();
-      tomorrow.setTime(tomorrow.getTime() + (1000*3600*24));
-      document.getElementById("time").innerHTML = tomorrow.getDate() + " " + months[tomorrow.getMonth()] + " " + tomorrow.getFullYear();
-    </script>
 
     <div class="header">
       <h1 class="panday">PANDAY<img class="logo" src="../../../css/pandas.jpg"/></h1>
@@ -30,21 +24,13 @@
 
     <div class="panda-reveal">
       <img class="pandapic" style="display: none;" src="#">
-        <script>
-          $("button").click(function(event) {
-            event.preventDefault();
-            $.ajax({
-              url: '/reveal',
-              type: 'get'
-            }).done(function(response) {
-              if($(".pandapic").toggle().is(":visible")) {
-                $('.pandapic').attr('src',response)
-              }
-            });
-          });
-        </script>
     </div>
 
+    <div class="contain-twilio">
+      <div class="send-the-pic" style="display: none;">
+        <button type="button">send the picture!</button>
+      </div>
+    </div>
 
   <div class="footer"></div>
   </body>
