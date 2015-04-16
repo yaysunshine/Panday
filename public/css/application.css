@@ -45,7 +45,7 @@ img.logo {
 .signin {
   margin-top: 8%;
   margin-right: 10%;
-  font-size: 24px;
+  font-size: 2em;
   position: relative;
   display: block;
   float: right;
@@ -75,6 +75,20 @@ img.pandapic {
   /*border: 2px solid black;*/
 }
 
+.contain-twilio {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.send-the-pic {
+  font-size: 2em;
+  position: relative;
+  display: block;
+  border: 2px solid green;
+}
+
 .sendpic {
   margin-top: 20%;
   margin-right: auto;
@@ -95,4 +109,11 @@ img.pandapic {
   /*margin-top: 10%;*/
   /*position: relative;*/
   /*border: 2px solid black;*/
+}
+
+.send-the-pic {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  display: block;
 }
