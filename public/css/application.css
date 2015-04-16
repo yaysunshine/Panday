@@ -87,6 +87,7 @@ img.pandapic {
   position: relative;
   display: block;
   border: 2px solid green;
+  width: 240px;
 }
 
 .sendpic {
