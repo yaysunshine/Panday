@@ -54,6 +54,7 @@ img.logo {
 
 img.pandapic {
   width: 300px;
+  margin-top: 8%;
 /*  display: block;
   margin-right: auto;
   margin-left: auto;
@@ -69,10 +70,21 @@ img.pandapic {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  margin-top: 50px;
   /*margin-top: 10%;*/
   /*position: relative;*/
   /*border: 2px solid black;*/
+}
+
+#send-the-pic {
+  border: 1px solid green;
+  margin-left: 10%;
+  font-size: 24px;
+  margin-bottom: 8%;
+}
+
+.send-the-pic {
+  text-align: left;
+  margin-top: 8%;
 }
 
 .sendpic {
