@@ -53,6 +53,16 @@ img.logo {
   border: 2px solid green;
 }
 
+#hidee {
+  margin-top: 8%;
+  margin-right: 10%;
+  font-size: 24px;
+  position: relative;
+  display: block;
+  float: right;
+  border: 2px solid green;
+}
+
 img.pandapic {
   width: 300px;
   text-align: center;
