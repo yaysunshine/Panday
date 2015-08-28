@@ -29,7 +29,7 @@ $(document).ready(function(){
       data: {picUrl: $(".pandapic").attr('src')}
     }).done(function(response) {
       alert('Sent! You can tweet the creator of this site the success at @ckennedyay or find code for this project at github.com/yaysunshine');
-      $(".signin > button").toggle();
     });
   });
 });
+
