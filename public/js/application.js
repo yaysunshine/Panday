@@ -11,11 +11,12 @@ $(document).ready(function(){
       url: '/reveal',
       type: 'get'
     }).done(function(response) {
-      if($(".pandapic").toggle().is(":visible")) {
+      if ($(".pandapic").toggle().is(":visible")) {
         $(".pandapic").attr('src',response)
       };
-
-      $(".send-the-pic").toggle()
+      $(".send-the-pic").toggle();
+      $("#hidee").toggle();
+      $("#reveal").toggle();
     });
   });
 
@@ -27,7 +28,8 @@ $(document).ready(function(){
       type: 'get',
       data: {picUrl: $(".pandapic").attr('src')}
     }).done(function(response) {
-      console.log('mms sent')
+      alert('Sent! You can tweet the creator of this site the success at @ckennedyay or find code for this project at github.com/yaysunshine');
+      $(".signin > button").toggle();
     });
   });
 });

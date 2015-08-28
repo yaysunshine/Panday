@@ -18,9 +18,14 @@
       <h1 class="panday">PANDAY<img class="logo" src="../../../css/pandas.jpg"/></h1>
 
       <div class="signin">
-        <button type="button">reveal panda of the day</button>
+        <button type="button">
+          <div id="reveal">reveal panda of the day</div>
+          <div id="hidee" style="display: none;">hide panda of the day</div>
+        </button>
       </div>
     </div>
+
+    <button type="button" id="hidee" style="display: none;">hide panda of the day</button>
 
     <div class="panda-reveal">
       <img class="pandapic" style="display: none;" src="#">
@@ -28,7 +33,7 @@
 
     <div class="contain-twilio">
       <div class="send-the-pic" style="display: none;">
-        <button type="button">send the picture!</button>
+        <button type="button" id="send-the-pic">send the picture!</button>
       </div>
     </div>
 
