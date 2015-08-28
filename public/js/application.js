@@ -16,6 +16,7 @@ $(document).ready(function(){
       };
       $(".send-the-pic").toggle();
       $("#hidee").toggle();
+      $("#reveal").toggle();
     });
   });
 
